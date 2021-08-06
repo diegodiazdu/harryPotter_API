@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded' ,() =>{
 })
 const fetchData = async () => {
     try {
-        const response = await fetch(`http://hp-api.herokuapp.com/api/characters`);
+        const response = await fetch(`https://hp-api.herokuapp.com/api/characters`);
         const data = await response.json();
         mostrarData(data);
     } catch (error) {
