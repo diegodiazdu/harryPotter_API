@@ -1,0 +1,51 @@
+.main {
+    @include tablet{
+        @include grid(3, auto);
+    }
+    
+}
+.main_titulo{
+    text-align: center;
+    font-family: $fuente_titulo;
+}
+.hp-container {
+    @include tablet {
+        @include grid(2, 1fr);
+        width: 95%;
+    }
+    margin: 2rem auto;
+    padding: 0  1rem;
+    width: 70%;
+    background-color: $cafe;
+    border-radius: 0.75rem;
+
+    .hp__section {
+        text-align: center;
+    }
+
+    .hp__image {
+        padding: 2rem;
+    }
+    .hp__image img {
+        @include tablet {
+            height: auto;
+            width: 100%;
+        }
+        width: 60%;
+        margin: 0 auto;
+        height: 30rem;
+    }
+
+    .hp__qualities,
+    .hp__house {
+        margin-bottom: 1.5rem;
+    }
+
+    h2,
+    h3,
+    h4,
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
